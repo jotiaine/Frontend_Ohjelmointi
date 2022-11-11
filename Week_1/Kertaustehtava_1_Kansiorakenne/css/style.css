@@ -1,0 +1,15 @@
+.h1-style {
+  margin-bottom: 1rem;
+}
+
+.h1-style2 {
+  text-shadow: 2px 2px black;
+}
+
+p {
+  font-size: 12px;
+}
+
+#h3-bold {
+  font-weight: bold;
+}

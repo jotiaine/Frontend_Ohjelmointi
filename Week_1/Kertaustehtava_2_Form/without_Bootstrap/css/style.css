@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+form {
+  background: rgb(226, 226, 226);
+  padding: 1rem;
+}
+
+h1 {
+  background-color: red;
+  padding: 0.8rem;
+  text-align: center;
+  color: #fff;
+}
+
+input {
+  display: inline-block;
+  font-size: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  outline: none;
+}
+
+.login-btn {
+  color: #fff;
+  background-color: red;
+  width: 100%;
+}
+
+.forgot-btn-container {
+  text-align: center;
+}
+
+.forgot-btn {
+  display: inline-block;
+  color: blue;
+  background-color: transparent;
+}
+
+.login-btn:hover {
+  background-color: blue;
+}
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+.forgot-btn:hover {
+  color: red;
+  cursor: pointer;
+}
+.forgot-btn:active {
+  transform: scale(0.98);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div>
+      <!-- Header -->
+      <h1>Login</h1>
+
+      <form action="">
+        <!-- Username & password inputs -->
+        <div>
+          <input id="username" type="text" placeholder="Username" required />
+        </div>
+        <div>
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+
+        <!-- Remember me checkbox -->
+        <div>
+          <input id="remember-me" type="checkbox" />
+          <label for="checkbox" name="checkbox">Remember me</label>
+        </div>
+
+        <!-- Login button -->
+        <div>
+          <label for="login-btn" name="">
+            <input
+              id="login-btn"
+              class="btn login-btn"
+              type="button"
+              value="Login"
+            />
+          </label>
+        </div>
+
+        <!-- Forgot password button -->
+        <div class="forgot-btn-container">
+          <btn id="forgot-btn" class="forgot-btn" for="forgot-password"
+            >Forgot Password?</btn
+          >
+        </div>
+      </form>
+      <script src="js/script.js"></script>
+    </div>
+  </body>
+</html>

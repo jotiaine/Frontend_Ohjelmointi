@@ -1,0 +1,25 @@
+/* .pic-container {
+  background-image: url("img/neonpic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.pic-container {
+  position: relative;
+}
+
+.btns {
+  top: 50%;
+  left: auto;
+  position: absolute;
+  background: transparent;
+  z-index: 1;
+}
+
+.img {
+  filter: blur(5px);
+}
+
+button {
+  background: transparent;
+}
