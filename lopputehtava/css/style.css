@@ -1,0 +1,166 @@
+body {
+  position: relative;
+  left: 10%;
+  transition: all ease-in;
+  opacity: 0.1;
+  height: 100vh;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.mycontainer {
+  position: relative;
+}
+
+.btn-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh !important;
+  background: transparent;
+  z-index: 1;
+}
+
+.try-again {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh !important;
+  background: transparent;
+  z-index: 11;
+}
+
+.header {
+  font-family: "Hurricane";
+  letter-spacing: 0.5rem;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  border-radius: 0.5rem;
+}
+
+.btn {
+  background: rebeccapurple;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.score {
+  font-family: "Hurricane";
+  letter-spacing: 0.3rem;
+}
+
+.card-container {
+  width: 90%;
+  max-width: 100rem;
+  margin-bottom: 2rem;
+  perspective: 95rem;
+}
+
+.img-card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  height: 12rem;
+  width: 7rem;
+  border-radius: 0.4rem !important;
+  transform: scale(1);
+}
+
+.img:active {
+  transform: scale(0.98);
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-card.rotate {
+  transform: rotateY(180deg);
+}
+
+.back,
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem !important;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.img-fluid {
+  height: 12rem;
+  width: 7rem;
+}
+
+.default {
+  border-radius: 0.2rem;
+}
+
+.hide {
+  display: none !important;
+}
+
+.gamearea-container {
+  opacity: 0.1;
+  transition: all ease-in;
+}
+
+.tries,
+.timer {
+  font-size: 5rem;
+  color: red;
+}
+
+@media all and (max-width: 690px) and (min-width: 391px) {
+  .header {
+    letter-spacing: 0.1rem;
+  }
+
+  .btn-container {
+    width: 90%;
+    height: 40%;
+  }
+
+  .img-fluid,
+  .img-card {
+    height: 8rem;
+    width: 5rem;
+  }
+}
+
+.finalscoreseconds,
+.finalscoretries {
+  color: red;
+}
+
+@media all and (max-width: 390px) {
+  .img-fluid,
+  .img-card {
+    height: 5rem;
+    width: 3rem;
+  }
+}
